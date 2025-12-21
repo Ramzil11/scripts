@@ -49,6 +49,9 @@ set_ssh_option "ClientAliveCountMax" "1"
 set_ssh_option "MaxAuthTries" "2"
 set_ssh_option "AuthorizedKeysFile" ".ssh/authorized_keys"
 
+systemctl stop ssh.socket
+systemctl disable ssh.socket
+
 echo "==> Перезапуск SSH сервиса..."
 systemctl restart ssh || systemctl restart sshd
 
