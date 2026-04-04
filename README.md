@@ -1,7 +1,7 @@
 ### ssh-config
 
 Parameters:
---no-root-login == убрать возможность логина под рута 
+- --no-root-login == убрать возможность логина под рута 
 
 
 ```bash
